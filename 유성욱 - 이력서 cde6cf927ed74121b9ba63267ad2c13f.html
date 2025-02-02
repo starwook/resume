@@ -1,0 +1,691 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title> 유성욱 - 이력서 </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="cde6cf92-7ed7-4121-b9ba-63267ad2c13f" class="page sans"><header><h1 class="page-title"> 유성욱 - 이력서 </h1><p class="page-description"></p></header><div class="page-body"><hr id="7f37d518-8990-49f2-b8a0-3598dd0c5968"/><div id="acd4f9f2-3273-471d-9641-1efa51ca9249" class="column-list"><div id="2981adb2-2e50-48a5-88c5-fc03834b830b" style="width:81.25%" class="column"><ul id="c9722e9b-8221-4ca1-94ac-54e011880f76" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default_background"><strong>Email</strong></mark><strong> </strong>| <strong>star.wookk@gmail.com</strong></li></ul><ul id="16c5885f-bd19-8057-934b-dd438783193c" class="bulleted-list"><li style="list-style-type:disc"><strong>Phone Number | 010 3228 9760</strong></li></ul><ul id="9915c838-dddc-40bc-bf7d-96a3f95d9895" class="bulleted-list"><li style="list-style-type:disc"><strong>GitHub</strong> |<strong> </strong><mark class="highlight-blue"><a href="https://github.com/starwook">https://github.com/starwook</a></mark></li></ul><ul id="ae5e3ba6-b3de-4947-a55b-d6d9958de700" class="bulleted-list"><li style="list-style-type:disc"><strong>Blog</strong> | <mark class="highlight-blue"><a href="https://velog.io/@starwook/posts">https://velog.io/@starwook/post</a></mark></li></ul><p id="1675885f-bd19-8058-88f8-c0de71a01f1f" class="">
+</p></div><div id="100bc42f-f3c0-41f4-92e0-e43b55e65dea" style="width:18.750000000000004%" class="column"><figure id="2972a122-b541-4abf-9d69-13d9a4343379" class="image" style="text-align:right"><a href="%E1%84%8B%E1%85%B2%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20-%20%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A7%E1%86%A8%E1%84%89%E1%85%A5%20cde6cf927ed74121b9ba63267ad2c13f/IMG_1062.jpg"><img style="width:288px" src="%E1%84%8B%E1%85%B2%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20-%20%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A7%E1%86%A8%E1%84%89%E1%85%A5%20cde6cf927ed74121b9ba63267ad2c13f/IMG_1062.jpg"/></a></figure></div></div><h1 id="d2db58a4-be24-4a4b-a0e3-9c6643c19666" class=""><mark class="highlight-blue">🎈 Introduce</mark></h1><hr id="8de15f8e-8f66-441b-acb4-a459d22271db"/><h3 id="1065885f-bd19-8002-85c2-d6f3e89b8581" class=""><strong>사용자의 관점에서 생각합니다.</strong></h3><p id="1615885f-bd19-80a2-bf5f-e8d3c5a3ce74" class="">코드는 사용자에게 가치를 제공하기 위한 수단 중 하나라고 생각합니다.</p><p id="16c5885f-bd19-806d-a6c4-d139a2eed8db" class="">사용자 중심의 접근을 하여 개발한 서비스가<strong> 배포 한 달만에</strong> <strong>하루 최대 5,000회</strong> 이상의 API 요청을 처리한 경험이 있습니다. </p><h3 id="828bc702-0940-4bb6-8399-6b02db159d1e" class="">유지보수성 높은 코드에 대해 고민합니다.</h3><p id="2f5cc26b-d703-44c3-a8bc-db5f7603d257" class="">확장성과 재사용성이 높은 설계와 가독성 높은 코드 작성을 추구합니다. </p><p id="16c5885f-bd19-8014-b866-e0e1eb967a79" class="">리팩토링에 투자하는 시간을 아까워 하지 않습니다.</p><h3 id="16c5885f-bd19-8070-98f6-e67c27994055" class=""><strong>자원과 결과를 함께 고려합니다.</strong></h3><p id="16c5885f-bd19-80c5-bee2-ee3d63270cd0" class="">문제 해결 이후에도 끊임없이 더 나은 방법을 모색합니다.</p><p id="16c5885f-bd19-8055-aeea-e82ea45c4f1e" class=""><strong>하지만 주어진 자원도 고려하며 그 안에서 최선의 결과</strong>를 내려고 합니다.</p><h1 id="1065885f-bd19-80f1-9364-eec76dead667" class="">🛠  <mark class="highlight-blue">Stacks</mark></h1><hr id="1065885f-bd19-806a-bf57-d438857b2f56"/><div id="1065885f-bd19-8077-a0d4-efaa86117060" class="column-list"><div id="368749f8-effb-4578-9b8c-c165e5364ae6" style="width:50.000000000000014%" class="column"><h2 id="1065885f-bd19-8087-9ab2-d3dd59f94a0e" class="">Back-End</h2></div><div id="1515885f-bd19-8003-b313-cc08e68e0068" style="width:50%" class="column"><h2 id="1065885f-bd19-8084-9452-d62c3ce7d619" class="">DevOps</h2></div></div><div id="1065885f-bd19-8001-9a4d-fefb6a43727c" class="column-list"><div id="270b3d90-6b42-4f8e-8261-fd280e07d7b8" style="width:50%" class="column"><ul id="1415885f-bd19-803f-846e-cd698c0a1474" class="block-color-gray bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>주요 언어: Java, Kotlin</strong></mark></li></ul><ul id="1065885f-bd19-8067-85d7-e2c7a87bdac1" class="block-color-gray bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>주요 기술: Spring Boot, Spring MVC, Spring Data JPA</strong></mark></li></ul><ul id="1065885f-bd19-802f-b9f7-d50d677fd152" class="bulleted-list"><li style="list-style-type:disc"><strong>저장소: MySQL</strong></li></ul><ul id="1065885f-bd19-8052-95c3-cd5f5c5303b6" class="bulleted-list"><li style="list-style-type:disc"><strong>테스트: JMeter, Mockito</strong></li></ul><ul id="1065885f-bd19-8096-adca-ce2f2a2660dd" class="bulleted-list"><li style="list-style-type:disc"><strong>모니터링: Pinpoint</strong></li></ul><p id="613e4a6c-d951-4f09-a5f1-fa1e92a416ac" class="">
+</p></div><div id="1065885f-bd19-8065-a1f1-ca43a06b6379" style="width:50%" class="column"><ul id="1065885f-bd19-80ce-a6c7-e623eb30af0b" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><strong>CI/CD: Docker, </strong></mark><strong>Github Action</strong></li></ul><ul id="a629c311-b335-43a4-bb6b-8289b0ae246e" class="bulleted-list"><li style="list-style-type:disc"><strong>클라우드 서비스: Aws, Naver Cloud Platform</strong></li></ul><ul id="1065885f-bd19-80fc-a4b4-d62cdd560a90" class="bulleted-list"><li style="list-style-type:disc"><strong>협업 도구: Jira, Slack</strong></li></ul><p id="1415885f-bd19-8017-9546-e457face94ce" class="">
+</p></div></div><h1 id="4a9f0a6a-9d1a-4609-9330-9a2eb6ece172" class="block-color-blue">💻  Projects</h1><h2 id="1805885f-bd19-805a-a28c-dc00d1226df4" class=""><strong>개인 프로젝트 - 컴싸</strong></h2><p id="13c5885f-bd19-8091-b8bb-d5a6fd5900f8" class=""><strong>2024.09 ~ </strong></p><hr id="1805885f-bd19-80e4-9010-ee5d764ccf2b"/><ul id="13c5885f-bd19-80f0-8390-eaf616ae6e32" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray_background"><strong><a href="https://github.com/CS-Solve/backend">Github | </a></strong></mark><mark class="highlight-gray_background"><strong><a href="https://comssa.site/">웹사이트</a></strong></mark></li></ul><hr id="1805885f-bd19-803b-891b-e91ce86c4563"/><ul id="1805885f-bd19-8023-a79a-c1f42cb36273" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-default"><mark class="highlight-gray_background"><strong>CS 전공 및 자격증 문제 풀이 사이트 </strong></mark></mark></li></ul><hr id="1805885f-bd19-80d3-9514-dfdce752f6ca"/><ul id="d4943806-18e0-411b-9305-ab35657b1292" class="bulleted-list"><li style="list-style-type:disc"><code>Java 11, Kotlin 1.8, Spring-Boot 2.7.10, MySql, Thymeleaf, Pinpoint, AWS, NCP</code> </li></ul><hr id="1805885f-bd19-8050-bc58-ef2a8d8f31eb"/><ul id="1805885f-bd19-80c6-9865-c2a1418b5175" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray_background"><strong>목표</strong></mark><ul id="1805885f-bd19-80b9-8599-cbce7cc14633" class="bulleted-list"><li style="list-style-type:circle">기능 확장을 통한<strong> </strong>사용자 확보에 중점을 두고, <strong>유지보수성 높은 코드</strong>를 작성하는 데 주력했습니다. 동시에, 치명적인 장애에도 대비하며 <strong>안전성 향상</strong>에도 신경 썼습니다</li></ul></li></ul><ul id="1455885f-bd19-80e4-ba05-ecdc624f3f65" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray_background"><strong>성과</strong></mark><ul id="1615885f-bd19-809a-9e70-d4958a1e38a8" class="bulleted-list"><li style="list-style-type:circle">사용자의 수요가 예상되는 기능을 추가하기에 유지 보수가 용이한 구조로 개발을 진행하였습니다. <strong>서비스 배포 한 달만에 하루 최대 5,000회 </strong>이상의 API 요청을 처리하며 사용자 중심의 접근이 서비스 성장을 촉진할 수 있다는 사실을 체감했습니다.</li></ul></li></ul><ul id="13c5885f-bd19-80bf-b928-d7add4cf0c9e" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray_background"><strong>수행 업무</strong></mark><ul id="16c5885f-bd19-8074-9420-c915720cf86c" class="bulleted-list"><li style="list-style-type:circle"><strong>문제 엔티티의 확장성을 고려한 설계</strong><ul id="16c5885f-bd19-80d8-b91f-d02575b19a3f" class="bulleted-list"><li style="list-style-type:square"><strong>QueryDSL</strong>을 활용하여 공통 Where 조건 쿼리 분리로 재사용성 향상</li></ul><ul id="16c5885f-bd19-8079-9c87-ddc46a5014df" class="bulleted-list"><li style="list-style-type:square">엔티티의 상속 구조를 <strong>조인 전략</strong>을 사용하여 데이터베이스 구조 구현</li></ul><ul id="16c5885f-bd19-80f2-99fc-c35a523439fc" class="bulleted-list"><li style="list-style-type:square">엔티티가 <strong>문제의 성격(객관식 등)</strong>에 따라 인터페이스를 상속하고, 이를 기반으로 재사용성 향상</li></ul></li></ul><ul id="1805885f-bd19-80c3-ad04-c527ec4f1820" class="bulleted-list"><li style="list-style-type:circle"><strong>외부 API 연동 최적화</strong><ul id="1805885f-bd19-80c7-b31c-e31264e3a817" class="bulleted-list"><li style="list-style-type:square">10초 이상 소요되는 OpenAi API 요청을 WebClient를 통한 <strong>비동기</strong> 통신으로 안전성 향상</li></ul></li></ul><ul id="13d5885f-bd19-8097-a3b3-e29957b211c5" class="bulleted-list"><li style="list-style-type:circle"><strong>모니터링 툴 최적화</strong><ul id="1805885f-bd19-80b6-84a1-f04f500ce3c0" class="bulleted-list"><li style="list-style-type:square">정적 리소스를 S3에 저장하여 모니터링 툴이 API 요청에만 집중</li></ul></li></ul><ul id="13d5885f-bd19-801d-9ea4-ef7fe115094f" class="bulleted-list"><li style="list-style-type:circle"><strong>Java → Kotlin 마이그레이션 </strong></li></ul><ul id="1735885f-bd19-801a-94cf-ed314028ad9a" class="bulleted-list"><li style="list-style-type:circle"><strong>CheckStyle, Ktlint를</strong> 이용한 코드 컨벤션 정립</li></ul></li></ul><p id="13d5885f-bd19-8077-bdb1-ede4ed43f73c" class="">
+</p><p id="1735885f-bd19-808f-b4e2-e68a009644c9" class="">
+</p><h2 id="dbed7477-d28d-4a41-bad1-0ced33f7f298" class=""><strong>현대 자동차 그룹 소프티어 부트캠프 프로젝트</strong></h2><p id="f2b8aff3-3800-40d4-a97f-492cb15be88c" class=""><br/><br/><strong>2024.07 ~ 09</strong></p><hr id="1805885f-bd19-805d-922c-ee8a59b6fb70"/><ul id="1315885f-bd19-8075-b8f7-d3226bf0e4b0" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray_background"><strong><a href="https://github.com/starwook/Team5-WatermelonClap-BE">Github</a></strong></mark></li></ul><hr id="1805885f-bd19-80de-a000-e28d5a49d3b4"/><ul id="bcf5b9ca-086b-4337-a227-b96471ed161b" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray_background"><strong>선착순 이벤트 페이지</strong></mark><mark class="highlight-brown"> </mark></li></ul><hr id="1805885f-bd19-806c-82f5-c0df06763dc8"/><ul id="23012d3f-190c-4718-b4e2-6a5c2461eb7c" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray_background"><strong>기획 2, 디자인 2, 프론트엔드 2, 백엔드 2</strong></mark></li></ul><hr id="1805885f-bd19-8035-9576-dd372baba268"/><ul id="47e84537-2c7c-4668-b07d-fad9534d6047" class="bulleted-list"><li style="list-style-type:disc"><code>Java 17, Spring-Boot 3.2.2, MySql, Jmeter, Pinpoint, AWS</code> </li></ul><hr id="1805885f-bd19-803d-a64e-e58e8a6e52e6"/><ul id="1805885f-bd19-807f-b429-d30754d2312a" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray_background"><strong>목표</strong></mark><ul id="1805885f-bd19-80d3-a107-e48782ebad53" class="bulleted-list"><li style="list-style-type:circle">1vCpu 2GB의 WAS, DB 서버에서 선착순 이벤트 페이지를 구현하고 이 과정에서<strong> 최소한의 리소스로 최대한의 효율</strong>을 내라는 미션을 받았습니다.</li></ul></li></ul><ul id="1455885f-bd19-8038-82d0-ce87c3ec128b" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray_background"><strong>성과</strong></mark><ul id="1455885f-bd19-8011-b615-f623af89aba5" class="bulleted-list"><li style="list-style-type:circle"><strong>전공 지식을 활용해 실제 개발에서 발생한 동시성 문제를 해결</strong>하였습니다.</li></ul><ul id="1455885f-bd19-8010-ab4e-fc04f07e1610" class="bulleted-list"><li style="list-style-type:circle"><strong>팀과 함께 나아갈 방향을 고민하고 실천했습니다. </strong>문서화를 통한 정보 공유로 팀원이 동일한 문제를 신속히 해결할 수 있었고, 프론트엔드에 신뢰성 있는 테스트 기반 API 명세서를 제공해 협업 효율을 높였습니다. </li></ul></li></ul><ul id="d8d0c9d1-5e40-4853-bc59-2e8a2737f4ee" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-gray_background"><strong>수행 업무</strong></mark><ol type="1" id="834e6012-a6d3-406c-9a74-82c8400af080" class="numbered-list" start="1"><li><mark class="highlight-default"><strong>트래픽이 몰릴 수 있는 선착순 이벤트  기능 구현</strong></mark><ul id="c10b0734-e037-4b92-8f06-0afd23874ff3" class="bulleted-list"><li style="list-style-type:disc">Mysql 비관적 락을 통한 선착순 이벤트 당첨자 수<strong> 동시성 제어</strong></li></ul><ul id="7f298c07-4181-48f9-9df9-7a56d8493c0a" class="bulleted-list"><li style="list-style-type:disc"><strong>DB 커넥션을 얻는 과정에서 발생하는 병목 현상 </strong>개선<figure id="3f414ba8-5f40-4c9a-8b18-064b214e3a3e" class="image"><a href="%E1%84%8B%E1%85%B2%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20-%20%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A7%E1%86%A8%E1%84%89%E1%85%A5%20cde6cf927ed74121b9ba63267ad2c13f/image.png"><img style="width:193.984375px" src="%E1%84%8B%E1%85%B2%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20-%20%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A7%E1%86%A8%E1%84%89%E1%85%A5%20cde6cf927ed74121b9ba63267ad2c13f/image.png"/></a></figure><ul id="90a14f7a-207a-46fe-b71c-798cefefa877" class="bulleted-list"><li style="list-style-type:circle">로컬 캐시를 사용하여 <strong>DB 접근 최소화 </strong></li></ul><ul id="0b8b4300-ee28-44fe-b49f-a34bf6d588bc" class="bulleted-list"><li style="list-style-type:circle">DB 접근을 위한<strong> thread-safe한 대기열</strong>을 구현하여 <strong>DB 접근 최소화 </strong><ul id="1065885f-bd19-800a-96aa-fd96992d7bc0" class="bulleted-list"><li style="list-style-type:square">1초에 200건의 동시성 제어가 필요한 요청에서<strong> 평균 시간 7초 → 2.5초, 최대 시간 14초 →  4.5초</strong>로 단축</li></ul></li></ul><ul id="1015885f-bd19-80eb-b9ec-ebc7330855d9" class="bulleted-list"><li style="list-style-type:circle">개별 요청별 DB 조회 대신, CompletableFuture로 요청을 큐에 적재하고 <strong>주기적 배치 처리로</strong> <strong>DB 접근 최소화 </strong><ul id="1065885f-bd19-8079-bbdf-e564b8c0e62f" class="bulleted-list"><li style="list-style-type:square"> 1초에 2000건의 동시성 제어가 필요한 요청에서<strong> 평균 시간 50초 → 0.6초, 최대시간 79초 → 2초</strong>로 단축</li></ul></li></ul><ul id="48e72277-aee6-4f92-9f32-12ddc2e0a816" class="bulleted-list"><li style="list-style-type:circle">DB 커넥션 풀을 분리하여<strong> 병목 현상 범위 최소화 </strong></li></ul><ul id="a4dc9f13-6192-44e8-80e0-a78b15b41766" class="bulleted-list"><li style="list-style-type:circle">요청당 <strong>한 개의 DB 커넥션</strong>을 사용하도록 하여 <strong>데드락 및 커넥션 누수 방지</strong></li></ul></li></ul><ul id="1065885f-bd19-80d2-9374-d51c171a1eb2" class="bulleted-list"><li style="list-style-type:disc">Jmeter로 스트레스 테스트를 진행<ul id="3a5b67d3-6ca0-49c9-9942-71a30d59d88d" class="bulleted-list"><li style="list-style-type:circle">유저 플로우를 반영하여 <strong>스트레스 테스트 시나리오</strong>를 작성<figure id="1065885f-bd19-804c-b376-d59f1e32c703" class="image"><a href="%E1%84%8B%E1%85%B2%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20-%20%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A7%E1%86%A8%E1%84%89%E1%85%A5%20cde6cf927ed74121b9ba63267ad2c13f/image%201.png"><img style="width:336px" src="%E1%84%8B%E1%85%B2%E1%84%89%E1%85%A5%E1%86%BC%E1%84%8B%E1%85%AE%E1%86%A8%20-%20%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A7%E1%86%A8%E1%84%89%E1%85%A5%20cde6cf927ed74121b9ba63267ad2c13f/image%201.png"/></a></figure></li></ul></li></ul></li></ol><ol type="1" id="a527eb73-e05e-4099-b460-303fba8a0205" class="block-color-default_background numbered-list" start="2"><li><mark class="highlight-default_background"><strong>테스트 작성</strong></mark><ul id="0abecff4-d113-47ed-8c22-844c71516422" class="bulleted-list"><li style="list-style-type:disc">10개 내외의 API에서 50개 이상의 통합 테스트, 단위테스트 작성</li></ul><ul id="9ce65cdb-32ca-4c3a-8108-48dfbb7d3533" class="block-color-default_background bulleted-list"><li style="list-style-type:disc"><strong>Spring Rest Docs</strong>를 통해 테스트를 기반으로 한 API 명세를 작성하여 협업 효율 향상</li></ul></li></ol><ol type="1" id="cb7a500c-a75c-4df2-83c1-0567609cf7a1" class="numbered-list" start="3"><li><mark class="highlight-default_background"> </mark><mark class="highlight-default_background"><strong>협업</strong></mark><ul id="07c3e851-030d-407e-ac6a-9e5581b8a7c4" class="block-color-default_background bulleted-list"><li style="list-style-type:disc">프로젝트 관리 도구로 Jira 사용<ul id="4d0d19a4-0478-4afe-9101-ecb4f42098f2" class="bulleted-list"><li style="list-style-type:circle"> 백로그 작성, 주 단위 스프린트, 스크럼 회의 등을 통하여 애자일 방법론 도입</li></ul></li></ul><ul id="b305474d-b2be-4e96-8c89-03957137d39b" class="block-color-default_background bulleted-list"><li style="list-style-type:disc">매일 경험하고 부딪힌 일을 문서화<ul id="53a3008c-101f-48ac-94f9-528e1ed8a21c" class="bulleted-list"><li style="list-style-type:circle">트러블 슈팅 해결 과정, 기술 버전 및 설치 커맨드들을 문서화하여 팀원간의 <strong>동일한 문제를 겪었을 때 빠르게 해결</strong></li></ul></li></ul><p id="1065885f-bd19-80a6-873d-da0de2b6adcb" class="">
+</p></li></ol></li></ul><h1 id="784f0a09-de5e-4bba-bf17-be7284d933e4" class="">🎓 <mark class="highlight-blue"><strong>Profile</strong></mark></h1><hr id="1275885f-bd19-80b8-8e43-e9bd3821f533"/><p id="1275885f-bd19-802c-a666-c168fa7baa35" class="block-color-blue"><mark class="highlight-default"><strong>학력</strong></mark></p><p id="1275885f-bd19-802b-a879-f6740c5e04cf" class="block-color-blue"><mark class="highlight-default">홍익대학교 - 컴퓨터 공학과</mark><mark class="highlight-default"><strong>                                   </strong></mark></p><p id="1275885f-bd19-80f7-a3bc-e189be97f94b" class="">2019.03 ~ 2024.02</p><p id="1275885f-bd19-80dc-aedb-f86094c6a626" class=""><strong>경험</strong></p><ul id="1275885f-bd19-8080-aa49-c836a651c47a" class="bulleted-list"><li style="list-style-type:disc">현대 자동차 그룹 소프티어 부트캠프 | 2024.07~ 2024.08</li></ul><ul id="1275885f-bd19-80eb-9b3f-fd50171cbb68" class="bulleted-list"><li style="list-style-type:disc">스마일게이트 dev camp | 2024.01 ~2024.02</li></ul><ul id="1275885f-bd19-80cd-84e0-c8cb9b7e0f0c" class="bulleted-list"><li style="list-style-type:disc">삼성 SDS 알고리즘 특강 | 2023.07~ 2023.08<ul id="beee1720-62b0-4e9a-8149-024a70cca4c6" class="bulleted-list"><li style="list-style-type:circle">자체 알고리즘 검정 시험 합격</li></ul></li></ul><ul id="1275885f-bd19-80b6-8fe5-d6371c5e2fd4" class="bulleted-list"><li style="list-style-type:disc">UMC 연합 앱개발 동아리 | 2022.09 ~ 2023.02</li></ul><p id="1275885f-bd19-8030-bbdd-c77ef09eadde" class=""><strong>자격</strong></p><ul id="1275885f-bd19-807b-9087-c7dcc1445712" class="bulleted-list"><li style="list-style-type:disc">SQL DEVELOPER (2023.12)</li></ul><p id="1595885f-bd19-805a-a6f5-f0d843414d21" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
